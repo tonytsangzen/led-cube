@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"led-cube\startup_stm32f070x6.o"
+"led-cube\ws2811.o"
+"led-cube\main.o"
+"led-cube\stm32f0xx_it.o"
+"led-cube\stm32f0xx_hal_msp.o"
+"led-cube\stm32f0xx_hal_spi.o"
+"led-cube\stm32f0xx_hal_spi_ex.o"
+"led-cube\stm32f0xx_hal_tim.o"
+"led-cube\stm32f0xx_hal_tim_ex.o"
+"led-cube\stm32f0xx_hal_rcc.o"
+"led-cube\stm32f0xx_hal_rcc_ex.o"
+"led-cube\stm32f0xx_hal.o"
+"led-cube\stm32f0xx_hal_i2c.o"
+"led-cube\stm32f0xx_hal_i2c_ex.o"
+"led-cube\stm32f0xx_hal_gpio.o"
+"led-cube\stm32f0xx_hal_dma.o"
+"led-cube\stm32f0xx_hal_cortex.o"
+"led-cube\stm32f0xx_hal_pwr.o"
+"led-cube\stm32f0xx_hal_pwr_ex.o"
+"led-cube\stm32f0xx_hal_flash.o"
+"led-cube\stm32f0xx_hal_flash_ex.o"
+"led-cube\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "led-cube\led-cube.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led-cube.map" -o led-cube\led-cube.axf
